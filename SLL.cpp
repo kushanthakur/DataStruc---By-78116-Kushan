@@ -7,7 +7,7 @@ using namespace std;
 class Node
 {
 public:
-  int key;
+  int key; //key will be used to directly access a certain node
   int data;
   Node *next;
 
