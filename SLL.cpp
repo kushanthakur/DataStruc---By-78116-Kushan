@@ -53,7 +53,7 @@ public:
     void del_begg_Node();
     void del_at_loc();
     void traverseNode(); //to print the Linked List
-    void locateNode();   //to locate the Linked List
+    void locateNode();   //to locateNode the Linked List
     void invertNode();   //to reverse the Linked List
     int totalNode();     // to count the total no. of nodes
 };
@@ -70,7 +70,7 @@ int SinglyLinkedlist ::totalNode()
 void SinglyLinkedlist ::prependNode()
 {
     temp = new Node();
-    cout << "\n Enter the data of new node ";
+    cout << "\n Enter the data for new node ";
     cin >> temp->data;
     temp->next = 0;
     if (head != 0)
@@ -90,7 +90,7 @@ void SinglyLinkedlist ::prependNode()
 void SinglyLinkedlist ::appendNode()
 {
     temp = new Node();
-    cout << "\n Enter the data of new node ";
+    cout << "\n Enter the data for new node ";
     cin >> temp->data;
     temp->next = 0;
     if (head != 0)
@@ -111,10 +111,10 @@ void SinglyLinkedlist ::insertNode()
 {
     //taking location input
     int loc;
-    cout << "\n Enter location ";
+    cout << "\n Enter the location ";
     cin >> loc;
     temp = new Node();
-    cout << "\n Enter the data of new node ";
+    cout << "\n Enter the data for new node ";
     cin >> temp->data;
     temp->next = 0;
     if (loc < 0 || loc > No_nodes)
@@ -131,13 +131,13 @@ void SinglyLinkedlist ::insertNode()
     {
         int pointer = 1;
         Node *reqNode = head;
-        //going to the node of given location
+        //jumping to the node of given location
         while (pointer != (loc - 1))
         {
             reqNode = reqNode->next;
             pointer++;
         }
-        //connecting given location with temp in list
+        //connecting to temp in the list
         temp->next = reqNode->next;
         reqNode->next = temp;
         No_nodes++;
@@ -240,7 +240,7 @@ void SinglyLinkedlist::del_at_loc()
     }
 }
 
-// Traverse Node
+// traverseNode Node
 void SinglyLinkedlist ::traverseNode()
 {
     if (head == 0)
@@ -260,7 +260,7 @@ void SinglyLinkedlist ::traverseNode()
     }
 }
 
-// Locate Node
+// locateNode Node
 void SinglyLinkedlist ::locateNode()
 {
     if (totalNode())
@@ -323,7 +323,8 @@ int main()
     {
 
         cout << setw(40) << setfill(' ') << "\n Singly Linked List ";
-        cout << "\n   - What operation do you want to perform? Select Option number.";
+        cout << "\n Hello There!";
+        cout << "\n--- What operation do you want to perform? Select Option Number.";
         cout << "\n 1.  Prepend Node ";
         cout << "\n 2.  Append Node ";
         cout << "\n 3.  Insert at location ";
@@ -332,9 +333,9 @@ int main()
         cout << "\n 6.  Delete at some location of list ";
         cout << "\n 7.  Reverse the list ";
         cout << "\n 8.  Search data in the list ";
-        cout << "\n 9.  Traverse the list ";
+        cout << "\n 9.  Traverse ";
         cout << "\n 10. Quit ";
-        cout << "\n enter your choice ";
+        cout << "\n Please enter your choice ";
         cin >> a;
 
         switch (a)
@@ -376,6 +377,7 @@ int main()
             S->traverseNode();
             break;
         case 10:
+            cout << "Exiting :D \n";
             exit(0);
         }
         cout << "\n Do you want to enter another data? (y/n) ";
