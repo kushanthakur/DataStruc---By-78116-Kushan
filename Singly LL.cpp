@@ -335,7 +335,7 @@ int main()
         cout << "\n 8.  Search data in the list ";
         cout << "\n 9.  Traverse ";
         cout << "\n 10. Quit ";
-        cout << "\n Please enter your choice ";
+        cout << "\n Please enter your choice: ";
         cin >> a;
 
         switch (a)
