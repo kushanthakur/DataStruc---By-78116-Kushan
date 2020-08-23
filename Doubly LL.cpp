@@ -1,4 +1,3 @@
-// Q.11. Implement Doubly Linked List using templates. Include functions for insertion, deletion and search of a number, reverse the list.
 #include <iostream>
 #include <iomanip>
 
