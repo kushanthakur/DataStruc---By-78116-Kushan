@@ -1,6 +1,5 @@
 #include <iostream>
 #include <iomanip>
-
 using namespace std;
 
 template <class T>
@@ -73,9 +72,9 @@ int DoublyLinkedList<T>::totalNode()
         return No_nodes;
 }
 
+// Prepend Node - Attach a node at the start
 template <class T>
 
-// Prepend Node - Attach a node at the start
 void DoublyLinkedList<T>::prependNode()
 {
     temp = new Node<T>();
@@ -261,7 +260,7 @@ void DoublyLinkedList<T>::del_at_loc()
     }
 }
 
-// traverseNode Node
+// traverse Node
 template <class T>
 
 void DoublyLinkedList<T>::traverseNode()
@@ -284,7 +283,7 @@ void DoublyLinkedList<T>::traverseNode()
     }
 }
 
-// locateNode Node
+// locate Node
 template <class T>
 
 void DoublyLinkedList<T>::locateNode()
