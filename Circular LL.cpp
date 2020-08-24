@@ -376,7 +376,7 @@ int main()
   {
     system("clear");
 
-    cout << setw(40) << setfill(' ') << "\n Doubly Linked List ";
+    cout << setw(40) << setfill(' ') << "\n Circular Linked List ";
     cout << "\n Hello There!";
     cout << "\n--- What operation do you want to perform? Select Option Number.";
     cout << "\n 1.  Prepend Node ";
