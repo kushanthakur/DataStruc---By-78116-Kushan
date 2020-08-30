@@ -83,3 +83,6 @@ void balance_parentheses()
   else
     cout << "NO" << endl;
 }
+
+// Code written by Kushan Thakur
+// the noob shinobi of CS
