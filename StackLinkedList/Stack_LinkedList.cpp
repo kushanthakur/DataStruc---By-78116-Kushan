@@ -145,7 +145,7 @@ int main()
     case 5:
       exit(0);
     default:
-      cout << "\n invalid choice ";
+      cout << "\n Invalid Option ";
     }
   } while (ch != 4);
   delete S;
