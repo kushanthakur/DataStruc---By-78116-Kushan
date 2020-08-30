@@ -151,3 +151,6 @@ int main()
   delete S;
   return 0;
 }
+
+// Code written by Kushan Thakur
+// the noob shinobi of CS
